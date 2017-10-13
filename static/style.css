@@ -1,0 +1,22 @@
+.blog_title {
+    background-color: #eee;
+    margin: 0 auto;
+    font: 16px sans-serif;
+    border-radius: 10px;    
+}
+.input_area {
+    text-align: top;
+    background-color: #eee;
+    padding: 0 0 120px 0;
+    margin: 0;
+    width: 540px;
+    font: 16px sans-serif;
+    border-radius: 10px;
+}
+.error {
+    color: red;
+    font-style: italic;
+}
+.h1 {
+    text-align: center;
+}
