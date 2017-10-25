@@ -14,9 +14,17 @@
     border-radius: 10px;
 }
 .error {
+    display: inline;
     color: red;
     font-style: italic;
 }
-.h1 {
+h1 {
     text-align: center;
+}
+.author {
+    font-style: italic;
+}
+label {
+    min-width: 120px;
+    display: inline-block;
 }

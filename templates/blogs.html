@@ -5,16 +5,20 @@
     {% if blogs|length == 0 %}
     <p>No Blogs yet. Click <a href = '/newpost'>New Post</a> to write something!</p>
     {% else %}
-    {% endif %}
+    
     <p>Click <a href = '/newpost'>Here</a> to write a new post!</p>
     <h3>Blog List</h3>
         <ul>
             {% for blog in blogs %}
-            <li><h4><a href='/display_blog?id={{blog.id}}'>{{blog.title}}</a></h4>
+            <li><h4><a href='/blog?id={{blog.id}}'>{{blog.title}}</a></h4>
                 {{blog.body}}
+                <p class=author>
+                Written by
+                <a href='/blog?user={{blog.owner.id}}'>{{blog.owner.username}}</a>
+                </p>
                 <hr/>
             </li>
             {% endfor %}
         </ul>
-
+    {% endif %}
 {% endblock %}
